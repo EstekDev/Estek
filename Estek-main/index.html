@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estek - Frontend Developer Portfolyo. Projelerim, makalelerim ve deneyimlerim.">
+  <title>ESTEK | Portfolyo & Blog</title>
+  <link rel="icon" href="./assets/estek_logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">ESTEK</a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-page="home">Ana Sayfa</a>
+        <a href="#projects" class="nav-link" data-page="projects">Projelerim</a>
+        <a href="#articles" class="nav-link" data-page="articles">Makalelerim</a>
+        <a href="#contact" class="nav-link" data-page="contact">İletişim</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN APP ===== -->
+  <main id="app">
+
+    <!-- ===== HOME VIEW ===== -->
+    <div id="view-home" class="view active">
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Yeni projelere açık
+          </div>
+          <h1 class="hero-title">
+            Merhaba, Ben <span class="gradient-text">ESTEK</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Modern web teknolojileri ile yaratıcı ve performanslı dijital deneyimler tasarlıyorum.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+            <a href="#contact" class="btn btn-outline">İletişime Geç</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://discord.gg/jt8sPBTThY" target="_blank" class="social-link" aria-label="Discord">
+              <img src="./assets/discord-icon.webp" alt="Discord">
+            </a>
+            <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub">
+              <img src="./assets/github.png" alt="GitHub">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about reveal" id="about">
+        <h2 class="section-title gradient-text">Hakkımda</h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="./assets/about-pic.jpg" alt="Estek" class="about-pic">
+          </div>
+          <div class="about-content">
+            <div class="about-stats">
+              <div class="stat-card glass-card">
+                <img src="./assets/experience.png" alt="Deneyim" class="stat-icon">
+                <h3>1+ Yıl</h3>
+                <p>Deneyim</p>
+              </div>
+              <div class="stat-card glass-card">
+                <img src="./assets/education.png" alt="Eğitim" class="stat-icon">
+                <h3>Udemy</h3>
+                <p>Eğitim</p>
+              </div>
+            </div>
+            <p class="about-text">
+              Frontend geliştirme alanında tutkulu bir yazılımcıyım. Modern web teknolojileri ile 
+              kullanıcı dostu, performanslı ve estetik uygulamalar geliştirmeye odaklanıyorum. 
+              Sürekli öğrenme ve kendimi geliştirme motivasyonuyla yeni teknolojileri keşfetmekten 
+              büyük keyif alıyorum. Hedefim, her projede kullanıcı deneyimini en üst düzeye çıkarmak.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills reveal" id="skills">
+        <h2 class="section-title gradient-text">Yeteneklerim</h2>
+        <div class="skills-container">
+          <div class="skills-group">
+            <h3 class="skills-group-title">🎨 Frontend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-card glass-card">
+                <div class="skill-icon">🌐</div>
+                <h4>HTML</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="90"></div></div>
+                <span class="skill-label">Deneyimli</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon">🎨</div>
+                <h4>CSS</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="85"></div></div>
+                <span class="skill-label">Deneyimli</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon">⚡</div>
+                <h4>JavaScript</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="65"></div></div>
+                <span class="skill-label">Temel</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon">⚛️</div>
+                <h4>React</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="50"></div></div>
+                <span class="skill-label">Temel</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3 class="skills-group-title">⚙️ Backend & Araçlar</h3>
+            <div class="skills-grid">
+              <div class="skill-card glass-card">
+                <div class="skill-icon">🟢</div>
+                <h4>Node.js</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="45"></div></div>
+                <span class="skill-label">Temel</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon">📦</div>
+                <h4>Git</h4>
+                <div class="skill-level"><div class="skill-bar" data-width="70"></div></div>
+                <span class="skill-label">Orta Seviye</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Projects Preview -->
+      <section class="recent-section reveal" id="recent-projects">
+        <div class="section-header">
+          <h2 class="section-title gradient-text">Son Projelerim</h2>
+          <a href="#projects" class="see-all-link">Tümünü Gör →</a>
+        </div>
+        <div class="projects-preview" id="projects-preview"></div>
+      </section>
+
+      <!-- Recent Articles Preview -->
+      <section class="recent-section reveal" id="recent-articles">
+        <div class="section-header">
+          <h2 class="section-title gradient-text">Son Makalelerim</h2>
+          <a href="#articles" class="see-all-link">Tümünü Gör →</a>
+        </div>
+        <div class="articles-preview" id="articles-preview"></div>
+      </section>
+
+    </div>
+
+    <!-- ===== PROJECTS VIEW ===== -->
+    <div id="view-projects" class="view">
+      <section class="page-section">
+        <h1 class="section-title gradient-text">Projelerim</h1>
+        <p class="section-subtitle">Geliştirdiğim projeler ve uygulamalar</p>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+    </div>
+
+    <!-- ===== ARTICLES VIEW ===== -->
+    <div id="view-articles" class="view">
+      <section class="page-section">
+        <h1 class="section-title gradient-text">Makalelerim</h1>
+        <p class="section-subtitle">Web geliştirme hakkında yazdığım yazılar</p>
+        <div class="articles-grid" id="articles-grid"></div>
+      </section>
+    </div>
+
+    <!-- ===== ARTICLE DETAIL VIEW ===== -->
+    <div id="view-article-detail" class="view">
+      <section class="article-detail" id="article-detail"></section>
+    </div>
+
+    <!-- ===== CONTACT VIEW ===== -->
+    <div id="view-contact" class="view">
+      <section class="page-section contact-section">
+        <h1 class="section-title gradient-text">İletişim</h1>
+        <p class="section-subtitle">Benimle iletişime geçin, birlikte harika projeler geliştirelim</p>
+        <div class="contact-cards">
+          <div class="contact-card glass-card">
+            <img src="./assets/email.png" alt="Email" class="contact-icon">
+            <a href="mailto:estek2026@gmail.com">estek2026@gmail.com</a>
+          </div>
+          <div class="contact-card glass-card">
+            <img src="./assets/discord-icon.webp" alt="Discord" class="contact-icon">
+            <a href="https://discord.gg/jt8sPBTThY" target="_blank">Discord Sunucusu</a>
+          </div>
+          <div class="contact-card glass-card">
+            <img src="./assets/github.png" alt="GitHub" class="contact-icon">
+            <a href="https://github.com/" target="_blank">GitHub Profili</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#projects">Projelerim</a>
+        <a href="#articles">Makalelerim</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <p class="footer-copy">Copyright &copy; 2026 ESTEK. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- ===== PROJECT DETAIL MODAL ===== -->
+  <div id="project-modal"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
